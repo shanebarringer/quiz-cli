@@ -28,7 +28,6 @@ func main() {
 			content:  record[0],
 			solution: record[1],
 		})
-
 	}
 
 	for _, val := range quiz {
@@ -43,7 +42,7 @@ func main() {
 		}
 
 	}
-	fmt.Println("the final score is: ", score)
+	fmt.Println("your total is: ", score, "out of: ", len(quiz))
 }
 
 func validateAnswer(answer string, solution string, score *int) {
@@ -54,5 +53,4 @@ func validateAnswer(answer string, solution string, score *int) {
 	} else {
 		fmt.Println("Incorrect!")
 	}
-
 }
